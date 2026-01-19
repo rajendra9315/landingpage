@@ -158,3 +158,78 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* HEADER STRUCTURE */
+.site-header {
+  background: #11162a;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 36px;
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: 700;
+  color: #229ED9;
+}
+
+/* NAV DESKTOP */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    background: #141a33;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav a {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+}
