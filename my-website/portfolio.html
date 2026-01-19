@@ -1,32 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Portfolio | LandingPro – Our Work & Projects</title>
+  <meta name="description" content="View LandingPro portfolio – professional landing pages and websites built for Telegram channels, Instagram creators, WhatsApp communities, and businesses.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-  <h2>LandingPro</h2>
-  <nav>
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-left">
+    <img src="assets/logo.png" alt="LandingPro Logo" class="logo">
+    <span class="brand">LandingPro</span>
+  </div>
+
+  <nav class="nav" id="navMenu">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
-    <a href="portfolio.html">Portfolio</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
     <a href="pricing.html">Pricing</a>
     <a href="contact.html">Contact</a>
   </nav>
+
+  <div class="menu-toggle" id="menuToggle">☰</div>
 </header>
 
+<!-- HERO -->
+<section class="hero">
+  <h1>Our Portfolio</h1>
+  <p>
+    A selection of landing pages and websites we’ve built for creators,  
+    communities, and online businesses.
+  </p>
+</section>
+
+<!-- PORTFOLIO GRID -->
 <section>
-  <h1>Our Work</h1>
-  <div class="cards">
-    <div class="card">Telegram Prediction Page</div>
-    <div class="card">Instagram Creator Bio</div>
-    <div class="card">WhatsApp Community Page</div>
+  <h2>Recent Projects</h2>
+  <p style="color:#ccc;">
+    These projects focus on clean design, trust-building layouts,
+    and clear call-to-action.
+  </p>
+
+  <div class="portfolio-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="portfolio-card">
+      <img src="assets/portfolio/telegram.jpg" alt="Telegram Landing Page">
+      <div class="portfolio-content">
+        <h3>Telegram Prediction Landing Page</h3>
+        <p>
+          High-converting dark theme landing page designed to increase
+          Telegram channel joins using trust signals and strong CTAs.
+        </p>
+        <div class="portfolio-actions">
+          <a href="#" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="portfolio-card">
+      <img src="assets/portfolio/instagram.jpg" alt="Instagram Bio Website">
+      <div class="portfolio-content">
+        <h3>Instagram Bio Website</h3>
+        <p>
+          Clean and mobile-first “link in bio” website for an Instagram
+          creator to showcase all important links in one place.
+        </p>
+        <div class="portfolio-actions">
+          <a href="#" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="portfolio-card">
+      <img src="assets/portfolio/whatsapp.jpg" alt="WhatsApp Group Page">
+      <div class="portfolio-content">
+        <h3>WhatsApp Community Join Page</h3>
+        <p>
+          Simple and secure landing page that helps users confidently
+          join a WhatsApp group without confusion.
+        </p>
+        <div class="portfolio-actions">
+          <a href="#" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="portfolio-card">
+      <img src="assets/portfolio/multipage.jpg" alt="Multi-Platform Website">
+      <div class="portfolio-content">
+        <h3>Multi-Platform Creator Website</h3>
+        <p>
+          One professional website linking Telegram, WhatsApp,
+          Instagram, YouTube, and more — perfect for creators.
+        </p>
+        <div class="portfolio-actions">
+          <a href="#" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<footer>© 2026 LandingPro</footer>
+<!-- CTA -->
+<section class="hero">
+  <h2>Want a Website Like This?</h2>
+  <p>
+    Tell us about your project and we’ll build a professional,
+    conversion-focused website for you.
+  </p>
+  <a href="contact.html" class="btn">Start Your Project</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 LandingPro. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
-
