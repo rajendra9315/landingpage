@@ -262,3 +262,54 @@ body {
 .portfolio-actions {
   margin-top: 15px;
 }
+/* ===== PRICING ===== */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.pricing-card {
+  background: #141a33;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.pricing-card h2 {
+  margin: 15px 0;
+  font-size: 32px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.pricing-card ul li {
+  margin: 8px 0;
+  color: #ccc;
+}
+
+.pricing-card.featured {
+  border: 2px solid #229ED9;
+  transform: scale(1.05);
+}
+/* ===== CONTACT ===== */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.contact-card {
+  background: #141a33;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
