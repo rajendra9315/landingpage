@@ -218,3 +218,47 @@ body {
     display: flex;
   }
 }
+/* ===== PORTFOLIO ===== */
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.portfolio-card {
+  background: #141a33;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.portfolio-content {
+  padding: 20px;
+}
+
+.portfolio-content h3 {
+  margin-bottom: 8px;
+}
+
+.portfolio-content p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.portfolio-actions {
+  margin-top: 15px;
+}
