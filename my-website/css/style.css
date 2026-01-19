@@ -109,3 +109,52 @@ footer {
   .hero h1 { font-size: 28px; }
 }
 
+/* PREMIUM EFFECTS */
+.card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  border-color: #229ED9;
+}
+
+/* BUTTON GLOW */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+  transform: translateX(-100%);
+}
+
+.btn:hover::after {
+  transform: translateX(100%);
+  transition: 0.6s;
+}
+
+/* SECTION HEADINGS */
+section h1, section h2 {
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #229ED9, #6dd5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SMOOTH PAGE LOAD */
+body {
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
